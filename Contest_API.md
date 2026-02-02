@@ -1839,7 +1839,8 @@ Properties of run objects:
 | time                | TIME    | Absolute time when run completed.
 | contest\_time       | RELTIME | Contest relative time when run completed.
 | run\_time           | number  | Run time in seconds. Should be a non-negative integer multiple of `0.001`. The reason for this is to not have rounding ambiguities while still using the natural unit of seconds.
-
+| score               | number? | Score for this run.  Only relevant if contest:scoreboard\_type is `score`.
+ 
 #### Examples
 
 Request:
